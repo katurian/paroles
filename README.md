@@ -8,12 +8,15 @@ For example, here is a passage from Haruki Murakami's *Norwegian Wood*:
 And some of the lists postagger.py would generate from the text:
 
 **adjectives**
+
 ['my', 'huge', 'dense', 'gloomy', 'Flemish', 'squat', 'soft', 'sweet', 'orchestral', 'dark', 'my']
 
 **numbers**
+
 ['thirty', 'seven', '747']
 
 **verbs**
+
 ['was', 'strapped', 'plunged', 'drenched', 'lent', 'was', 'began', 'flow', 'speakers', 'failed', 'send', 'hit', 'smiled', 'left', 'changed', 'straightened', 'looked', 'hanging', 'had', 'lost', 'gone', 'had', 'died', 'disappeared', 'would', 'know']
 
 **nouns**
@@ -21,12 +24,15 @@ And some of the lists postagger.py would generate from the text:
 ['seat', 'cloud', 'cover', 'approach', 'airport', 'rains', 'earth', 'everything', 'air', 'landscape', 'ground', 'crew', 'rain', 'gear', 'flag', 'airport', 'building', 'billboard', 'plane', 'ground', 'music', 'ceiling', 'cover', 'version', 'melody', 'shudder', 'time', 'music', 'tune', 'plane', 'window', 'clouds', 'thinking', 'what', 'course', 'life', 'times', 'friends', 'who', 'feelings']
 
 **proper nouns**
+
 ['Hamburg', 'Cold', 'November', 'BMW', 'Germany', 'Beatles’', 'Norwegian', 'Wood', 'Billy', 'Joel', 'North', 'Sea']
 
 **direct objects**
+
 ['earth', 'everything', 'air', 'version', 'shudder', 'me', 'window', 'what', 'feelings']
 
 **adverbs**
+
 ['then', 'So', 'again', 'never', 'harder', 'ever', 'forever', 'never', 'again']
 
 I provided some corpora for you to play with. Take a look at Spacey's docs as well for new features you can add: https://spacy.io/usage/linguistic-features
