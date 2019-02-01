@@ -15,7 +15,7 @@ sym = []
 num = []
 
 def pos(text_file):
-    with open(text_file, 'r') as f:
+    with open(text_file, encoding='utf8', errors='ignore') as f:
         text = nlp(f.read())
         for token in text:
                 if token.pos_ == "ADJ":
@@ -46,3 +46,4 @@ def pos(text_file):
 
 
 pos('gametranscript')
+pos('all.txt')
