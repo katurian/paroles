@@ -39,7 +39,7 @@ And some of the lists postagger.py would generate from the text:
 # Directions
 1.  Install the **spaCy** package with **pip install spacy**.
 2.  In your command-line interpreter, type **python -m spacy download en**, this downloads an English language model needed for this program to work: https://spacy.io/usage/models
-3.  When you call the function **pos()** be sure to change 'gametranscript' to 'whatevertextfile' you want to use. And make sure this txt file is in the same folder as postagger.py
+3.  When you call the function **pos()** be sure to change 'gametranscript' to 'whatevertextfile.txt' you want to use. And make sure this txt file is in the same folder as postagger.py
 4.  If you want to change the names of the POS lists in postagger.py, change them *after* line 45.\
 5. Run it!
 
