@@ -35,7 +35,6 @@ And some of the lists postagger.py would generate from the text:
 
 ['then', 'So', 'again', 'never', 'harder', 'ever', 'forever', 'never', 'again']
 
-I provided some corpora for you to play with. Take a look at Spacey's docs as well for new features you can add: https://spacy.io/usage/linguistic-features
 
 # Directions
 1.  Install the **spaCy** package with **pip install spacy**.
@@ -44,3 +43,4 @@ I provided some corpora for you to play with. Take a look at Spacey's docs as we
 4.  If you want to change the names of the POS lists in postagger.py, change them *after* line 45.\
 5. Run it!
 
+I provided some corpora for you to play with. Take a look at Spacey's docs as well for new features you can add: https://spacy.io/usage/linguistic-features
