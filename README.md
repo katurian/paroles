@@ -1,5 +1,5 @@
 # Introduction
-postagger.py (at the very bottom of the repository) opens a .txt file, tags each word in that file with a POS (parts of speech) label, and then appends each labeled word to its corresponding list. 
+postagger.py (at the very bottom of the repository) opens a .txt file, tags each word in that file with a POS (parts of speech) label, and then appends each labeled word to its corresponding dictionary key value. 
 
 For example, here is a passage from Haruki Murakami's *Norwegian Wood*:
 
