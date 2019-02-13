@@ -2,48 +2,37 @@ import spacy
 import en_core_web_sm
 nlp = en_core_web_sm.load()
 
-verb = []
-adj = []
-noun = []
-adv = []
-sub = []
-dobj = []
-iobj = []
-pron = []
-prop = []
-sym = []
-num = []
-
 def pos(text_file):
+    pos_dict = {'adjectives': [], 'verbs': [], 'nouns': [], 'adverbs': [], 'proper_nouns': [], 'pronouns': [],
+                'subjects': [], 'direct_objects': [], 'indirect_objects': [], 'symbols': [], 'numbers': []}
     with open(text_file, encoding='utf8', errors='ignore') as f:
         text = nlp(f.read())
         for token in text:
                 if token.pos_ == "ADJ":
-                    adj.append(token.text)
+                    pos_dict["adjectives"].append(token.text)
                 if token.pos_ == "VERB":
-                    verb.append(token.text)
+                    pos_dict["verbs"].append(token.text)
                 if token.pos_ == "ADV":
-                    adv.append(token.text)
+                    pos_dict["adverbs"].append(token.text)
                 if token.pos_ == "NOUN":
-                    noun.append(token.text)
+                    pos_dict["nouns"].append(token.text)
                 if token.pos_ == "PROPN":
-                    prop.append(token.text)
+                    pos_dict["proper_nouns"].append(token.text)
                 if token.pos_ == "NUM":
-                    num.append(token.text)
+                    pos_dict["numbers"].append(token.text)
                 if token.pos_ == "SYM":
-                    sym.append(token.text)
+                    pos_dict["symbols"].append(token.text)
                 if token.pos_ == "PRON":
-                    pron.append(token.text)
+                    pos_dict["pronouns"].append(token.text)
                 if token.dep_ == "dobj":
                     direct_object = token.orth_
-                    dobj.append(direct_object)
+                    pos_dict["direct_objects"].append(direct_object)
                 if token.dep_ == "iobj":
                     indirect_object = token.orth_
-                    iobj.append(indirect_object)
+                    pos_dict["indirect_objects"].append(indirect_object)
                 if token.dep_ == "nsubj":
                     subject = token.orth_
-                    sub.append(subject)
-
-
-pos('gametranscript')
-pos('all.txt')
+                    pos_dict["subjects"].append(subject)
+        return pos_dict
+    
+pos()
