@@ -35,4 +35,4 @@ def pos(text_file):
                     pos_dict["subjects"].append(subject)
         return pos_dict
     
-pos()
+pos("corpus.txt")
